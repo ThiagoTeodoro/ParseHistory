@@ -35,4 +35,4 @@ v.0.0.3= Improving code structure
 
 Next plans :
 
-- [] Change the show number from 200,0123,111 for 200,01k
+- [ ] Change the show number from 200,0123,111 for 200,01k
