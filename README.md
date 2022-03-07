@@ -28,12 +28,10 @@ Or you can use the Command line option
 
 And then interface will open.
 
-===============================================
 v.0.0.1= Beta version for test.
 v.0.0.2= Add command line option
 v.0.0.3= Improving code structure
 
 
-===============================================
 Next plans :
-Change the show number from 200,0123,111 for 200,01k
+- [] Change the show number from 200,0123,111 for 200,01k
