@@ -30,7 +30,7 @@ And then interface will open.
 
 v.0.0.1= Beta version for test.\
 v.0.0.2= Add command line option.\
-v.0.0.3= Improving code structure.\
+v.0.0.3= Improving code structure.
 
 Next plans :
 
