@@ -23,8 +23,9 @@ ChangeLog
 ===============================================
 v.0.0.1 = Beta version for test.\
 v.0.0.2 = Add command line option.\
-v.0.0.3 = Improving code structure.
+v.0.0.3 = Improving code structure.\
+v.0.1.0 = Fix bug on reding decimal shifted pares, apply visualization like 200.5k insted 200,500.02 (This version will clean old pares to work properly)
 
 Next plans
 ===============================================
-- [ ] Change the show number from 200,0123,111 for 200,01k
+- [x] Change the show number from 200,0123,111 for 200,01k
