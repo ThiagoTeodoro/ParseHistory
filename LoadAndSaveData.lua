@@ -5,7 +5,7 @@
 
 --Data Storage functions
 function SaveDataAndLoad(dataToSave)
-    Turbine.PluginData.Save(Turbine.DataScope.Character, "ParseHistory_Parses", dataToSave,
+    Turbine.PluginData.Save(Turbine.DataScope.Character, "ParseHistory_Dummy", dataToSave,
         function (status, message)
             LoadData();
         end
@@ -13,7 +13,7 @@ function SaveDataAndLoad(dataToSave)
 end
 
 function LoadData()
-    Turbine.PluginData.Load(Turbine.DataScope.Character, "ParseHistory_Parses",
+    Turbine.PluginData.Load(Turbine.DataScope.Character, "ParseHistory_Dummy",
         function(dataLoad)
             if(dataLoad ~= nil) then
                 -- Update PARSES global variable, to preserve old data.

@@ -5,16 +5,8 @@
 
 -- Utils Functions
 
-function FormateNumberForHumans(number)
-
-    local i, j, minus, int, fraction = tostring(number):find('([-]?)(%d+)([.]?%d*)');
-
-    -- reverse the int-string and append a comma to all blocks of 3 digits
-    int = int:reverse():gsub("(%d%d%d)", "%1,");
-
-    -- reverse the int-string back remove an optional comma and put the 
-    -- optional minus and fractional part back
-    return minus .. int:reverse():gsub("^,", "") .. fraction;
+function FormateNumberForHumans(numberString)  
+  return ConvertToNumberK(tonumber(numberString)).."K";
 end
 
 function FormateDateForHumans(date)
@@ -50,4 +42,13 @@ function ReverseList(list)
     end
 
     return reverse;
+end
+
+function ConvertToNumberK(number)
+  return Round((number/1000), 1);
+end
+
+function Round(num, numDecimalPlaces)
+  local mult = 10^(numDecimalPlaces or 0)
+  return math.floor(num * mult + 0.5) / mult
 end

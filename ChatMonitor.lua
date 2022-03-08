@@ -38,8 +38,11 @@ end
 function SearchDpsParse(message)
    --cleaning up message.
    message = string.sub(message, string.find(message, "<\\Select>", 1 , true), -1);
+   message = string.gsub(message, "<\\Select> says, 'Thou didst maintain a DPS of ", "")
+   message = string.gsub(message, " over the last three minutes of our momentous conflict!'\n", "")
+   local parseNumber = string.gsub(message, ",", "");
    --get final parse
-   return string.gsub(message, "%D+", "");
+   return parseNumber;
 end
 
 function RegisterDpsParseOnDatabase(Dps)
