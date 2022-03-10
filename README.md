@@ -28,4 +28,4 @@ v.0.2.2 = Cpu usage improvement, implement CombatDecisor.
 Next plans
 ===============================================
 - [x] Change the show number from 200,0123,111 for 200,01k
-- [ ] Rcords Parses from some specific Bosses.
+- [ ] Records Parses from some specific Bosses.
