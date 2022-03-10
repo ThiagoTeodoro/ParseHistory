@@ -9,6 +9,13 @@ import "ParseHistory.Librarys";
 
 
 --Main Call
-SetupWindow();
-LoadData();
-AddCallback(ChatMonitor, "Received", ChatReceived);
+SetupWindowForDummyParse();
+LoadData("ParseHistory_Dummy", function (dataLoaded)
+    if(dataLoaded ~= nil) then
+        -- Update PARSES global variable, to preserve old data.
+        DummyParseHistory = dataLoaded;
+        -- Function responsable for render data on window.
+        ShowDummyParses(DummyParseHistory);
+    end
+end);
+

@@ -4,23 +4,10 @@
 ------------------------------------------------------------------------------------------
 
 --Data Storage functions
-function SaveDataAndLoad(dataToSave)
-    Turbine.PluginData.Save(Turbine.DataScope.Character, "ParseHistory_Dummy", dataToSave,
-        function (status, message)
-            LoadData();
-        end
-    );
+function SaveData(dataToSave, scope, callback)
+    Turbine.PluginData.Save(Turbine.DataScope.Character, scope, dataToSave, callback);
 end
 
-function LoadData()
-    Turbine.PluginData.Load(Turbine.DataScope.Character, "ParseHistory_Dummy",
-        function(dataLoad)
-            if(dataLoad ~= nil) then
-                -- Update PARSES global variable, to preserve old data.
-                PARSES = dataLoad;
-                -- Function responsable for render data on window.
-                ShowParses(PARSES);
-            end
-        end
-    );
+function LoadData(scope, callback)
+    Turbine.PluginData.Load(Turbine.DataScope.Character, scope, callback);        
 end

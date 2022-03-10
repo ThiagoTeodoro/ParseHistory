@@ -3,17 +3,15 @@
 	<Information>
 		<Name>Parse History</Name>
 		<Author>Teodoro [Thronur]</Author>
-		<Version>0.1.1</Version>
+		<Version>0.2.1</Version>
 		<Description>
 			Plugin created to store the parse performed in Dummys.
 
-You can open the panel typing in the say channel:
+You can use Command line option for open windows:
 
-Open ParseHistory,
-
-Or you can use Command line option
+/Parse open dummy
+/Parse open bosses
 /Parse open
-/Parse close
 
 For record parses you just need to for a Dummy and make parses the plugin will register data every time a parse 3mim ending.
 		</Description>

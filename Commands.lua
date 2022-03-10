@@ -12,15 +12,18 @@ function ParseHistoryCommands:Execute( command, arguments )
 	-- Open and Close Window
 	------------------------------------------------------------------------------------------
 	if ( arguments == "help" ) then
-		--On another version we will implments this
-	elseif ( arguments == "Open" or arguments == "open") then
-        OpenUi();
-	elseif ( arguments == "Close" or arguments == "close") then
-        CloseUi();
-    end
+		Turbine.Shell.WriteLine("/Parse open dummy");
+		Turbine.Shell.WriteLine("/Parse open bosses");	
+	elseif ( string.lower(arguments) == "open") then
+        Turbine.Shell.WriteLine("We change this command type /Parse open dummy now.");
+	elseif ( string.lower(arguments) == "open dummy") then
+        OpenWindowDummy();
+	elseif ( string.lower(arguments) == "open bosses") then
+				
+	end
 end
 
 ------------------------------------------------------------------------------------------
 -- Add the sahell command --
 ------------------------------------------------------------------------------------------
-Turbine.Shell.AddCommand( "Parse;ParseHistory", ParseHistoryCommands );
+Turbine.Shell.AddCommand( "parse,Parse;ParseHistory", ParseHistoryCommands );

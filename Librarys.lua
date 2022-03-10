@@ -9,6 +9,7 @@
 import "Turbine";
 import "Turbine.UI";
 import "Turbine.UI.Lotro";
+import "Turbine.Gameplay";
 
 ------------------------------------------------------------------------------------------
 -- Import Globals --
@@ -28,7 +29,7 @@ import "ParseHistory.LoadAndSaveData";
 ------------------------------------------------------------------------------------------
 -- Import UI --
 ------------------------------------------------------------------------------------------
-import "ParseHistory.UI";
+import "ParseHistory.DummyUI";
 
 ------------------------------------------------------------------------------------------
 -- Import Util --
@@ -36,9 +37,10 @@ import "ParseHistory.UI";
 import "ParseHistory.Util";
 
 ------------------------------------------------------------------------------------------
--- Import ChatMonitor --
+-- Import Monitors --
 ------------------------------------------------------------------------------------------
-import "ParseHistory.ChatMonitor";
+import "ParseHistory.DummyMonitor";
+import "ParseHistory.CombatDecider";
 
 ------------------------------------------------------------------------------------------
 -- Import Commands --

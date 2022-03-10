@@ -24,8 +24,9 @@ ChangeLog
 v.0.0.1 = Beta version for test.\
 v.0.0.2 = Add command line option.\
 v.0.0.3 = Improving code structure.\
-v.0.1.0 = Fix bug on reding decimal shifted pares, apply visualization like 200.5k insted 200,500.02 (This version will clean old parses to work properly)\
+v.0.1.0 = Fix bug on reding decimal shifted pares, apply visualization like 200.5k insted 200,500.02 (This version will clean old pares to work properly)\
 v.0.1.1 = Fix folders
+v.0.2.1 = Cpu usage improvement, implement CombatDecisor.
 
 Next plans
 ===============================================
