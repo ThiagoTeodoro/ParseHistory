@@ -30,6 +30,7 @@ import "ParseHistory.LoadAndSaveData";
 -- Import UI --
 ------------------------------------------------------------------------------------------
 import "ParseHistory.DummyUI";
+import "ParseHistory.BossUI";
 
 ------------------------------------------------------------------------------------------
 -- Import Util --
@@ -40,6 +41,7 @@ import "ParseHistory.Util";
 -- Import Monitors --
 ------------------------------------------------------------------------------------------
 import "ParseHistory.DummyMonitor";
+import "ParseHistory.BossesMonitor";
 import "ParseHistory.CombatDecider";
 
 ------------------------------------------------------------------------------------------

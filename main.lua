@@ -19,3 +19,13 @@ LoadData("ParseHistory_Dummy", function (dataLoaded)
     end
 end);
 
+SetupWindowForBossParse();
+LoadData("ParseHistory_Boss", function (dataLoaded)
+    if(dataLoaded ~= nil) then
+        -- Update PARSES global variable, to preserve old data.
+        BossParseHistory = dataLoaded;
+        -- Function responsable for render data on window.
+        ShowBossParses(BossParseHistory);
+    end
+end);
+

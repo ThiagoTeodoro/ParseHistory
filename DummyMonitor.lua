@@ -5,10 +5,10 @@
 
 DummyMonitor = function(f, args)
 
-  ParseDummyMnitoring(args);
+  ParseDummyMonitoring(args);
 end
 
-function ParseDummyMnitoring(args)
+function ParseDummyMonitoring(args)
 
   if(args.ChatType == Turbine.ChatType.Say) then
 
@@ -45,4 +45,19 @@ function RegisterAndSaveParseMadOnDummy(Dps)
       end
     end);
   end);
+end
+
+
+function CleanDummyParse()
+	SaveData({}, "ParseHistory_Dummy", function ()
+		LoadData("ParseHistory_Dummy", function (dataLoaded)
+			if(dataLoaded ~= nil) then
+				-- Update PARSES global variable, to preserve old data.
+        DummyParseHistory = dataLoaded;
+        -- Function responsable for render data on window.
+        ShowDummyParses(DummyParseHistory);
+				Turbine.Shell.WriteLine("All Parses for Dummy have been cleared.")
+			end
+		end);
+	end);
 end
