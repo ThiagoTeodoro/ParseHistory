@@ -3,9 +3,9 @@ Plugin created to store the parse performed in Dummys.
 
 You can use Command line option for open windows:
 
-/Parse open dummy -> Open Parses for Dummy
-/Parse open bosses -> Open Parses for Bosses
-/Parse clean bosses -> Clean Parses Bosses
+/Parse open dummy -> Open Parses for Dummy\
+/Parse open bosses -> Open Parses for Bosses\
+/Parse clean bosses -> Clean Parses Bosses\
 /Parse clean dummy -> Clean Parses Dummy
 
 For record Dummy parses you just need to for a Dummy and make parses the plugin will register data every time a parse 3mim ending.
