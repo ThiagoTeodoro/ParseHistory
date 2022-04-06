@@ -2,7 +2,7 @@
 <PluginConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>1171</Id>
   <Name>Parse History</Name>
-  <Version>v.0.2.2</Version>
+  <Version>v.1.2.2</Version>
   <Author>thx190</Author>
   <InfoUrl>http://www.lotrointerface.com/downloads/info1171</InfoUrl>
   <DownloadUrl>http://www.lotrointerface.com/downloads/download1171</DownloadUrl>

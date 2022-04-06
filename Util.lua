@@ -91,7 +91,7 @@ end
 
 function FormatPerSecondNumber(ps)
 
-  local number = (ps +0);
+  local number = (ps + 0);
 
   -- if the number is less than 10,000 display the number (always) rounded to one decimal
   ps = Round(number,1);

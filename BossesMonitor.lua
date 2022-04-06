@@ -95,19 +95,24 @@ function RegisterKillOrDeath(whoDie)
 end
 
 function RegisterAndSaveParseMadOnBosses(register, boss)
-	NewParseData = {boss, register[1], register[2], register[3]};
-	table.insert(BossParseHistory, NewParseData);
-	SaveData(BossParseHistory, "ParseHistory_Boss", function ()
-		LoadData("ParseHistory_Boss", function (dataLoaded)
-			if(dataLoaded ~= nil) then
-				-- Update PARSES global variable, to preserve old data.
-				BossParseHistory = dataLoaded;
-				-- Function responsable for render data on window.
-				ShowBossParses(BossParseHistory);
-				Turbine.Shell.WriteLine("New Boss Parser Registered.")
-			end
+
+	if (tonumber(register[1]) == nil or register[1] == 0 or register[2] == 0 or register[2] == nil or register[3] == 0 or register[3] == nil) then
+		return
+	else
+		NewParseData = {boss, register[1], register[2], register[3]};
+		table.insert(BossParseHistory, NewParseData);
+		SaveData(BossParseHistory, "ParseHistory_Boss", function ()
+			LoadData("ParseHistory_Boss", function (dataLoaded)
+				if(dataLoaded ~= nil) then
+					-- Update PARSES global variable, to preserve old data.
+					BossParseHistory = dataLoaded;
+					-- Function responsable for render data on window.
+					ShowBossParses(BossParseHistory);
+					Turbine.Shell.WriteLine("New Boss Parser Registered.")
+				end
+			end);
 		end);
-	end);
+	end
 end
 
 function CalculateBosses()
