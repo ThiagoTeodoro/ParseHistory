@@ -26,7 +26,7 @@ v.0.0.3 = Improving code structure\
 v.0.1.0 = Fix bug on reding decimal shifted pares, apply visualization like 200.5k insted 200,500.02 (This version will clean old parses to work properly).\
 v.0.1.1 = Fix folders\
 v.0.2.2 = Cpu usage improvement, implement CombatDecisor.\
-v.1.2.2 = Add Boss tracker for Parses made on Bosses. You can tipe now /parse open bosses to see the parses made on Gundabad Bosses Instances. (BETA VERSION)
+v.1.2.2 = Add Boss tracker for Parses made on Bosses. You can tipe now /parse open bosses to see the parses made on Gundabad Bosses Instances. (BETA VERSION)\
 v.1.2.3 = Fix bug found in v.1.2.2 prevent nil records on data file. (BETA VERSION)
 
 Next plans
