@@ -27,11 +27,13 @@ v.0.1.0 = Fix bug on reding decimal shifted pares, apply visualization like 200.
 v.0.1.1 = Fix folders\
 v.0.2.2 = Cpu usage improvement, implement CombatDecisor.\
 v.1.2.2 = Add Boss tracker for Parses made on Bosses. You can tipe now /parse open bosses to see the parses made on Gundabad Bosses Instances. (BETA VERSION)\
-v.1.2.3 = Fix bug found in v.1.2.2 prevent nil records on data file. (BETA VERSION)
+v.1.2.3 = Fix bug found in v.1.2.2 prevent nil records on data file. (BETA VERSION)\
+v.1.2.4 = Fix bug found in v.1.2.3 prevent nil error when a Tell its send and the Server respond with a nil message on Code. (BETA VERSION)\
 
 Next plans
 ===============================================
 - [x] Change the show number from 200,0123,111 for 200,01k
 - [x] Records Parses from some specific Bosses.
 - [ ] New UI for show Datas record for Bosses and Dummys
+- [ ] Button for send the numbers on Raid Chat or Fellowship chat. 
 - [ ] Add more Bosses in the Tracker. 

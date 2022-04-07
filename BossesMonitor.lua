@@ -10,7 +10,10 @@ end
 
 function ParseBossesMonitoring(args)	
 
-	local line = string.gsub(string.gsub(args.Message,"<rgb=#......>(.*)</rgb>","%1"),"^%s*(.-)%s*$", "%1");
+	local line = "";
+	if(args.Message ~= nil) then
+		line = string.gsub(string.gsub(args.Message,"<rgb=#......>(.*)</rgb>","%1"),"^%s*(.-)%s*$", "%1");
+	end
 
  	--Combat data
 	if(args.ChatType == Turbine.ChatType.PlayerCombat or args.ChatType == Turbine.ChatType.DEATH or args.ChatType == Turbine.ChatType.EnemyCombat) then		
