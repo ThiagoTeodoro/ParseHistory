@@ -45,5 +45,9 @@ Boss = {
 	"Mozrúk the Wind-rider",
 	"Shaikmuz",
 	"Mozrúk",
-	"Gâdh-and-Shum"
+	"Gâdh-and-Shum",
+	"Velzájar",
+	"Shakalog",
+	"Grazmauk",
+	"Ulshatarg"
 };
